@@ -1,0 +1,77 @@
+@startuml
+' Título
+title Aplicativo de Gestão de Condomínios
+
+class Condominio {
+  -nome : Char
+  -endereco : Char
+  -quantidade_blocos : Integer
+  -ativo : Boolean
+  +filtrarPorCondominio() : List<Condominio>
+}
+
+class Bloco {
+  -nome : Char
+  -numero_andares : Integer
+  -quantidade_apartamentos : Integer
+  -ativo : Boolean
+  -condominio : Condominio
+}
+
+class Apartamento {
+  -numero : Char
+  -andar : Integer
+  -area_m2 : Float
+  -ocupado : Boolean
+  -bloco : Bloco
+  -dono : Proprietario
+}
+
+class Proprietario {
+  -nome : Char
+  -email : Char
+  -telefone : Char
+  -data_entrada : Date
+}
+
+class Funcionario {
+  -nome : Char
+  -cargo : Char
+  -salario : Float
+  -ativo : Boolean
+  -condominio : Condominio
+}
+
+class Garagem {
+  -numero_vaga : Char
+  -coberta : Boolean
+  -placa_veiculo : Char
+  -disponivel : Boolean
+  -apartamento : Apartamento
+}
+
+class Visitante {
+  -nome : Char
+  -documento : Char
+  -tipo_visita : Char
+  -placa_visitante : Char 
+}
+
+class Visita {
+  -dia : Date
+  -hora : Time
+  -visitante : Visitante
+  -apartamento : Apartamento
+  -responsavel : Proprietario
+}
+
+' --- Relacionamentos ---
+Condominio "1" *--> "N" Bloco
+Bloco "1" *--> "N" Apartamento
+Condominio "1" *--> "N" Funcionario
+Proprietario "N" *--> "N" Apartamento
+Apartamento "1" *--> "N" Garagem
+Visita "1" <--* "1" Visitante
+Visita "1" <--* "1" Apartamento
+Visita "1" <--* "1" Proprietario
+@enduml
