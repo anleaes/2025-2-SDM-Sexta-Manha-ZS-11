@@ -65,11 +65,18 @@ class Visita {
   -responsavel : Proprietario
 }
 
+class ProprietarioApartamento {
+apartamento: Apartamento
+proprietario: Proprietario
+
+}
+
 ' --- Relacionamentos ---
 Condominio "1" *--> "N" Bloco
 Bloco "1" *--> "N" Apartamento
 Condominio "1" *--> "N" Funcionario
-Proprietario "N" *--> "N" Apartamento
+Proprietario "N" *--> "N" ProprietarioApartamento
+Apartamento "N" *--> "N" ProprietarioApartamento
 Apartamento "1" *--> "N" Garagem
 Visita "1" <--* "1" Visitante
 Visita "1" <--* "1" Apartamento
