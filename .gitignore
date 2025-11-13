@@ -1,1 +1,3 @@
 condominioapp/__pycache__/*
+/apps/condominio/__pycache__/*
+/apps/condominio/migrations/*
