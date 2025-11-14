@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'condominio.apps.CondominioConfig',
+    'condominios.apps.CondominiosConfig',
 ]
 
 MIDDLEWARE = [
