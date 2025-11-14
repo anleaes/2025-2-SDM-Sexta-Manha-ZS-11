@@ -1,3 +1,5 @@
 condominioapp/__pycache__/*
 /apps/condominios/__pycache__/*
 /apps/condominios/migrations/*
+/apps/visitantes/__pycache__/*
+/apps/visitantes/migrations/*
