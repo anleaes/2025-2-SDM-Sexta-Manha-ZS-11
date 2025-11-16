@@ -6,7 +6,7 @@ app_name = 'visitantes'
 
 router = routers.DefaultRouter()
 router.register('', views.VisitanteViewSet,
-base_name= 'visitantes')
+basename= 'visitantes')
 
 urlpatterns = [
     path('', include(router.urls))
