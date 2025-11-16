@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'condominios.apps.CondominiosConfig',
     'visitantes.apps.VisitantesConfig',
+    'blocos.apps.BlocosConfig',
 ]
 
 MIDDLEWARE = [

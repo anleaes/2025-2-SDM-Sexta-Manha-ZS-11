@@ -3,3 +3,5 @@ condominioapp/__pycache__/*
 /apps/condominios/migrations/*
 /apps/visitantes/__pycache__/*
 /apps/visitantes/migrations/*
+/apps/blocos/__pycache__/*
+/apps/blocos/migrations/*
