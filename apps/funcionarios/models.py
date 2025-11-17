@@ -5,7 +5,7 @@ from condominios.models import Condominio
 class Product(models.Model):
     nome = models.CharField('Nome', max_length=50)
     cargo = models.CharField('Cargo', max_length=50)
-    salario = models.FloatField('Salario', max_digits=10)
+    salario = models.FloatField('Salario')
     ativo = models.BooleanField('Ativo', default=True)
     condominio = models.ForeignKey(Condominio, on_delete=models.CASCADE)
     
