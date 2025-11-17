@@ -2,7 +2,7 @@ from django.db import models
 from condominios.models import Condominio
 
 # Create your models here.
-class Product(models.Model):
+class Funcionario(models.Model):
     nome = models.CharField('Nome', max_length=50)
     cargo = models.CharField('Cargo', max_length=50)
     salario = models.FloatField('Salario')
