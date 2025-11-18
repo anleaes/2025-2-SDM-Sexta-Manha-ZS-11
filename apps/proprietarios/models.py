@@ -7,3 +7,10 @@ class Proprietario(models.Model):
     telefone = models.CharField('Telefone', max_length=15)
     data_entrada = models.DateField('Data de Entrada')
     
+    class Meta:
+        verbose_name = 'Proprietário'
+        verbose_name_plural = 'Proprietários'
+        ordering = ['id']
+    
+    def __str__(self):
+        return self.nome
