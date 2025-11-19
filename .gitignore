@@ -13,3 +13,5 @@ condominioapp/__pycache__/*
 /apps/garagens/migrations/*
 /apps/apartamentos/__pycache__/*
 /apps/apartamentos/migrations/*
+/apps/visitas/__pycache__/*      
+/apps/visitas/migrations/*
