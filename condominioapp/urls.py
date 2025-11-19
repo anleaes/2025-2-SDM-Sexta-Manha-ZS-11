@@ -26,4 +26,5 @@ urlpatterns = [
     path('proprietarios/', include('proprietarios.urls', namespace='proprietarios')),
     path('apartamentos/', include('apartamentos.urls', namespace='apartamentos')),
     path('garagens/', include('garagens.urls', namespace='garagens')),
+    path('visitas/', include('visitas.urls', namespace='visitas') ),
 ]
