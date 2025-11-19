@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'funcionarios.apps.FuncionariosConfig',
     'garagens.apps.GaragensConfig',
     'proprietarios.apps.ProprietariosConfig',
+    'apartamentos.apps.ApartamentosConfig',
 ]
 
 MIDDLEWARE = [
