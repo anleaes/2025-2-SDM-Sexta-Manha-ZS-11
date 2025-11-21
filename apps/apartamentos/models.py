@@ -9,7 +9,7 @@ class Apartamento(models.Model):
     area_m2 = models.FloatField()
     ocupado = models.BooleanField(default=False)
     bloco = models.ForeignKey(Bloco, on_delete=models.CASCADE)
-    proprietario = models.ManyToManyField(Proprietario)
+    dono = models.ManyToManyField(Proprietario)
     
     class Meta:
         verbose_name = "Apartamento"
