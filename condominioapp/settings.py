@@ -54,6 +54,8 @@ INSTALLED_APPS = [
     'proprietarios.apps.ProprietariosConfig',
     'apartamentos.apps.ApartamentosConfig',
     'visitas.apps.VisitasConfig',
+    'django_filters',
+
 ]
 
 MIDDLEWARE = [
