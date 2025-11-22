@@ -78,7 +78,7 @@ Condominio "1" *--> "N" Funcionario
 Proprietario "N" *--> "N" ProprietarioApartamento
 Apartamento "N" *--> "N" ProprietarioApartamento
 Apartamento "1" *--> "N" Garagem
-Visita "1" <--* "1" Visitante
-Visita "1" <--* "1" Apartamento
-Visita "1" <--* "1" Proprietario
+Visita "N" <--* "1" Visitante
+Visita "N" <--* "1" Apartamento
+Visita "N" <--* "1" Proprietario
 @enduml
